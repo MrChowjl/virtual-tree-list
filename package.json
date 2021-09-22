@@ -2,7 +2,7 @@
   "name": "virtual-tree-list",
   "version": "1.0.1",
   "description": "react-table-for-virtual-tree",
-  "main": ".src",
+  "main": "./src",
   "directories": {
     "doc": "docs",
     "example": "examples",
