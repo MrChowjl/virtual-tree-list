@@ -20,7 +20,7 @@ import Backend from 'react-dnd-html5-backend';
 function App() {
   return (
     <Grid>
-      <h1>rsuite-table</h1>
+      <h1>virtual-tree-list</h1>
       <p>A React table component</p>
       <p>
         <a href="https://github.com/rsuite/rsuite-table">https://github.com/rsuite/rsuite-table</a>

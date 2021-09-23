@@ -11,7 +11,7 @@
   "scripts": {
     "format": "prettier --write \"{src,test}/**/*.{tsx,ts,js}\"",
     "format:check": "prettier --list-different \"{src,test}/**/*.{tsx,ts,js}\"",
-    "build": "npm run build:gulp && npm run build:types",
+    "build": "[my-framework] build --output public",
     "build:gulp": "gulp build",
     "build:types": "npx tsc --emitDeclarationOnly --outDir lib && npx tsc --emitDeclarationOnly --outDir es",
     "build:docs": "rm -rf assets &&  NODE_ENV=production webpack",
