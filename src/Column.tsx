@@ -39,7 +39,7 @@ export interface ColumnProps {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Column(_props: ColumnProps) {
+const Column: React.FC<ColumnProps> = () => {
   return null;
 }
 

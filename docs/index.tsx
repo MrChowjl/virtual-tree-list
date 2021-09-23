@@ -23,7 +23,7 @@ function App() {
       <h1>virtual-tree-list</h1>
       <p>A React table component</p>
       <p>
-        <a href="https://github.com/rsuite/rsuite-table">https://github.com/rsuite/rsuite-table</a>
+        <a href="https://github.com/MrChowjl/virtual-tree-list">https://github.com/MrChowjl/virtual-tree-list</a>
       </p>
       <hr />
       <Examples
