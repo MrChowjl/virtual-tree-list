@@ -63,7 +63,6 @@ Column.defaultProps = {
   width: 100
 };
 
-Column.propTypes = propTypes;
 
 export const columnHandledProps = Object.keys(propTypes);
 
