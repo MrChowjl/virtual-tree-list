@@ -5,7 +5,7 @@ import isNil from 'lodash/isNil';
 import { LAYER_WIDTH } from './constants';
 import { useClassNames } from './utils';
 import TableContext from './TableContext';
-import { RightOutlined, DownOutlined } from '@ant-design/icons';
+import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import { StandardProps, RowDataType } from './@types/common';
 import { columnHandledProps } from './Column';
 
@@ -143,7 +143,8 @@ const Cell = React.forwardRef((props: InnerCellProps, ref: React.Ref<HTMLDivElem
   }
 
   const renderTreeNodeExpandIcon = () => {
-    const ExpandIconComponent = expanded ? <DownOutlined/> : <RightOutlined/>;
+    const ExpandIconComponent = expanded ? <span style={{ border: '1px solid #333', padding: '0 2px', transform: 'Scale(.8)', borderRadius: 3 }}><MinusOutlined /></span > :
+      <span style={{ border: '1px solid #333', padding: '0 2px', borderRadius: 3 }}><PlusOutlined /></span>;
     const expandButton = ExpandIconComponent;
 
     if (isTreeCol && hasChildren) {

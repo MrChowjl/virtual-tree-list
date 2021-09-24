@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TableLocaleType } from './@types/common';
-
+import { Spin } from 'antd'
 interface LoaderProps extends React.HTMLAttributes<HTMLDivElement> {
   locale: TableLocaleType;
   loadAnimation: boolean;
@@ -21,7 +21,7 @@ const Loader = React.forwardRef((props: LoaderProps, ref: React.Ref<HTMLDivEleme
     <div ref={ref} className={addPrefix('loader-wrapper')}>
       <div className={addPrefix('loader')}>
         <i className={addPrefix('loader-icon')} />
-        <span className={addPrefix('loader-text')}>{locale?.loading}</span>
+        <span className={addPrefix('loader-text')}><Spin /></span>
       </div>
     </div>
   );
