@@ -11,7 +11,7 @@ interface LoaderProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Loader = React.forwardRef((props: LoaderProps, ref: React.Ref<HTMLDivElement>) => {
-  const { loadAnimation, loading, locale, addPrefix, renderLoading } = props;
+  const { loadAnimation, loading, addPrefix, renderLoading } = props;
 
   if (!loadAnimation && !loading) {
     return null;

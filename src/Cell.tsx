@@ -143,8 +143,8 @@ const Cell = React.forwardRef((props: InnerCellProps, ref: React.Ref<HTMLDivElem
   }
 
   const renderTreeNodeExpandIcon = () => {
-    const ExpandIconComponent = expanded ? <span style={{ border: '1px solid #333', padding: '0 2px', transform: 'Scale(.8)', borderRadius: 3 }}><MinusOutlined /></span > :
-      <span style={{ border: '1px solid #333', padding: '0 2px', borderRadius: 3 }}><PlusOutlined /></span>;
+    const ExpandIconComponent = expanded ? <span style={{ border: '1px solid #333', padding: '0 2px', transform: 'Scale(.8)', borderRadius: 3 }}><MinusOutlined /></span > : 
+    <span style={{ borderRadius: 3, border: '1px solid #333', padding: '0 2px' }}><PlusOutlined /></span>;
     const expandButton = ExpandIconComponent;
 
     if (isTreeCol && hasChildren) {
