@@ -92,18 +92,18 @@
   }
 
   &-cell {
-    height      : 36px;
+    height        : 36px;
     // line-height: 57px;
-    padding: 0 5px;
-    border-bottom: 1px solid #303030;
-    border-style: solid;
-    border-width: 0;
-    border-color: @border-color;
-    display     : block;
-    overflow    : hidden;
-    position    : absolute;
-    white-space : normal;
-    background  : @body-background;
+    padding       : 0 5px;
+    border-bottom : 1px solid #303030;
+    border-style  : solid;
+    border-width  : 0;
+    border-color  : @border-color;
+    display       : block;
+    overflow      : hidden;
+    position      : absolute;
+    white-space   : normal;
+    background    : @body-background;
 
     &.first {
       border-left-width: 0;
@@ -123,7 +123,7 @@
     }
 
     &-content {
-     .ellipsis();
+      .ellipsis();
     }
 
     &-header {
@@ -132,7 +132,9 @@
       }
 
       &-sort-wrapper {
-        display: inline-block;
+        vertical-align: middle;
+        margin-left   : 2px;
+        display       : inline-block;
       }
     }
 
