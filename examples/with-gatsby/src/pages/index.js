@@ -10,7 +10,7 @@ const dataList = [
 
 export default function Home() {
   const [sortColumn, setSortColumn] = React.useState("id")
-  const [sortType, setSortType] = React.useState("asc")
+  const [sortType, setSortType] = React.useState("ascend")
   return (
     <div>
       <Table

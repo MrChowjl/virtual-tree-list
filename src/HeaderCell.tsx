@@ -30,8 +30,8 @@ export interface HeaderCellProps extends InnerCellProps {
 }
 
 const SORTED_ICON = {
-  desc: <ArrowDownOutlined />,
-  asc: <ArrowUpOutlined />
+  descend: <ArrowDownOutlined />,
+  ascend: <ArrowUpOutlined />
 };
 
 const HeaderCell = React.forwardRef((props: HeaderCellProps, ref: React.Ref<HTMLDivElement>) => {

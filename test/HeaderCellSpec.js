@@ -20,7 +20,7 @@ describe('HeaderCell', () => {
 
   it('Should output default sort desc icon', () => {
     const instanceDom = getDOMNode(
-      <HeaderCell sortable sortColumn="name" sortType="desc" dataKey="name">
+      <HeaderCell sortable sortColumn="name" sortType="descend" dataKey="name">
         test
       </HeaderCell>
     );
