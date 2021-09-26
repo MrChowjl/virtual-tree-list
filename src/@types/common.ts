@@ -12,7 +12,7 @@ export interface StandardProps extends React.HTMLAttributes<HTMLElement> {
   style?: React.CSSProperties;
 }
 
-export type SortType = 'desc' | 'asc';
+export type SortType = 'descend' | 'ascend';
 export interface RowDataType {
   dataKey?: string;
   [key: string]: any;

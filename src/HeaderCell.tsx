@@ -10,7 +10,7 @@ export interface HeaderCellProps extends InnerCellProps {
   index?: number;
   minWidth?: number;
   sortColumn?: string;
-  sortType?: 'desc' | 'asc';
+  sortType?: 'descend' | 'ascend';
   sortable?: boolean;
   resizable?: boolean;
   groupHeader?: boolean;
@@ -73,9 +73,9 @@ const HeaderCell = React.forwardRef((props: HeaderCellProps, ref: React.Ref<HTML
 
   if (sortColumn === dataKey) {
     ariaSort = 'other';
-    if (sortType === 'asc') {
+    if (sortType === 'ascend') {
       ariaSort = 'ascending';
-    } else if (sortType === 'desc') {
+    } else if (sortType === 'descend') {
       ariaSort = 'descending';
     }
   }
@@ -151,7 +151,7 @@ HeaderCell.defaultProps = {
 HeaderCell.propTypes = {
   index: PropTypes.number,
   sortColumn: PropTypes.string,
-  sortType: PropTypes.oneOf(['desc', 'asc']),
+  sortType: PropTypes.oneOf(['descend', 'ascend']),
   sortable: PropTypes.bool,
   resizable: PropTypes.bool,
   minWidth: PropTypes.number,
