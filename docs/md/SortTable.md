@@ -4,7 +4,6 @@
 
 ```js
 class SortTable extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +37,6 @@ class SortTable extends React.Component {
   }
 
   handleSortColumn(sortColumn, sortType) {
-    console.log(sortColumn,sortType)
     this.setState({
       loading: true
     });
@@ -57,12 +55,10 @@ class SortTable extends React.Component {
       <div>
         <Table
           height={400}
-          data={fakeData}
+          data={this.getData()}
           sortColumn={this.state.sortColumn}
           sortType={this.state.sortType}
-          onSortColumn={(r,e) => {
-            console.log(r,e)
-          }}
+          onSortColumn={this.handleSortColumn}
           loading={this.state.loading}
           onRowClick={data => {
             console.log(data);
