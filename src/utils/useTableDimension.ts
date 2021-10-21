@@ -73,12 +73,14 @@ const useTableDimension = (props: TableDimensionProps) => {
 
     const nextContentHeight = rows.length
       ? (Array.from(rows)
-          .map((row: Element) => getHeight(row) || rowHeight)
-          .reduce((x: number, y: number) => x + y) as number)
+        .map((row: Element) => getHeight(row) || rowHeight)
+        .reduce((x: number, y: number) => x + y) as number)
       : 0;
 
     // After setting the affixHeader property, the height of the two headers should be subtracted.
-    contentHeight.current = nextContentHeight - (affixHeader ? headerHeight * 2 : headerHeight);
+    contentHeight.current = Math.round(
+      nextContentHeight - (affixHeader ? headerHeight * 2 : headerHeight)
+    );
 
     if (!autoHeight) {
       /**
